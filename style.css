@@ -1,0 +1,76 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    transition: background 0.3s, color 0.3s;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+select, button, input {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Math Field */
+#math-field {
+    border: 2px solid #333;
+    padding: 10px;
+    min-width: 200px;
+    font-size: 18px;
+    background: white;
+}
+
+/* Solution Box */
+#solution {
+    background: white;
+    padding: 15px;
+    margin: 15px auto;
+    width: 80%;
+    border-radius: 8px;
+}
+
+/* Graphing Calculator */
+#calculator {
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode #math-field {
+    background: #333;
+    color: white;
+    border: 2px solid white;
+}
+
+.dark-mode button {
+    background: #ff9800;
+}
+
+.dark-mode button:hover {
+    background: #e68900;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBSE Class 11 Math Solver</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.5.1/math.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nerdamer/1.1.10/nerdamer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nerdamer/1.1.10/Calculus.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nerdamer/1.1.10/Algebra.min.js"></script>
+</head>
+<body>
+    <h1>CBSE Class 11 Math Solver</h1>
+    
+    <select id="topic">
+        <option value="differentiate">Differentiation</option>
+        <option value="integrate">Integration</option>
+    </select>
+
+    <div id="math-field" contenteditable="true"></div>
+    
+    <button onclick="solveMath()">Solve</button>
+    <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+    <div id="solution"></div>
+    
+    <h2>Graphing Calculator</h2>
+    <div id="calculator"></div>
+    
+    <h2>NCERT Quiz</h2>
+    <p id="quizQuestion"></p>
+    <input type="text" id="quizAnswer">
+    <button onclick="checkQuiz()">Check</button>
+    <p id="quizFeedback"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
