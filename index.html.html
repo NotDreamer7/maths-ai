@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBSE 11th Math Solver</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- MathQuill -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.js"></script>
+
+    <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.js"></script>
+
+    <!-- Math.js & Nerdamer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.5.1/math.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nerdamer/1.1.11/nerdamer.all.min.js"></script>
+
+    <!-- Desmos Graphing API -->
+    <script src="https://www.desmos.com/api/v1.6/calculator.js"></script>
+</head>
+<body>
+    <h1>CBSE Class 11 Math Solver</h1>
+
+    <label>Select Chapter:</label>
+    <select id="chapterSelect">
+        <option value="algebra">Algebra</option>
+        <option value="trigonometry">Trigonometry</option>
+        <option value="coordinate-geometry">Coordinate Geometry</option>
+        <option value="calculus">Calculus</option>
+        <option value="statistics">Statistics & Probability</option>
+    </select>
+
+    <h2>Enter Your Math Question:</h2>
+    <div id="math-field"></div>
+    <button onclick="solveMath()">Solve</button>
+
+    <h2>Solution:</h2>
+    <p id="solution"></p>
+
+    <h2>Graph:</h2>
+    <div id="calculator"></div>
+    <button onclick="plotGraph()">Plot Graph</button>
+
+    <h2>NCERT Quiz</h2>
+    <button onclick="generateQuiz()">Generate NCERT Question</button>
+    <p id="quizQuestion"></p>
+    <input type="text" id="quizAnswer" placeholder="Enter your answer">
+    <button onclick="checkAnswer()">Submit</button>
+    <p id="quizFeedback"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

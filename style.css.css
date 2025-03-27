@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Dropdown Menu */
+select {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Math Input Field */
+#math-field {
+    border: 2px solid #333;
+    padding: 10px;
+    display: inline-block;
+    min-width: 200px;
+    background-color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Solution Box */
+#solution {
+    background-color: white;
+    padding: 15px;
+    margin: 15px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Graphing Calculator */
+#calculator {
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    background: white;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+/* NCERT Quiz Section */
+#quizQuestion {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#quizAnswer {
+    padding: 8px;
+    font-size: 16px;
+}
+
+#quizFeedback {
+    font-weight: bold;
+    margin-top: 10px;
+}
